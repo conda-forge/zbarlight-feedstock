@@ -1,6 +1,6 @@
 {% set name = "zbarlight" %}
-{% set version = "2.0" %}
-{% set sha256 = "7fce62b0240a1770ea4174eb4593a06351f391a028cce0d80fa7b9c74c7c6607" %}
+{% set version = "2.3" %}
+{% set sha256 = "9ddb37751121b8e575277b312510bd3d08839b4b465a42b873e8e25344b26698" %}
 
 package:
   name: {{ name|lower }}
