@@ -1,6 +1,6 @@
 {% set name = "zbarlight" %}
-{% set version = "2.3" %}
-{% set sha256 = "9ddb37751121b8e575277b312510bd3d08839b4b465a42b873e8e25344b26698" %}
+{% set version = "3.0" %}
+{% set sha256 = "6f703ac04ec4f700db02dc948835ca73176b52854ddcfe267ac62954e34aacec" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 build:
   number: 0
   script: "{{ PYTHON }} -m pip install --no-deps --ignore-installed ."
-  skip: True  # [win]   zbar not available on windows
+  skip: True  # [win or py2k]   zbar not available on windows
 
 requirements:
   build:
