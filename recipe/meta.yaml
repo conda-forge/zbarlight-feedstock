@@ -11,13 +11,14 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 3
+  number: 4
   script: "{{ PYTHON }} -m pip install --no-deps --ignore-installed ."
   skip: True  # [win or py2k]   zbar not available on windows
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - pip
